@@ -6,4 +6,3 @@ for i in range(2, nth_term + 1):
     a = b
     b = c
 print("The Fibonacci term at", nth_term, "is", b)
-#complete

@@ -17,3 +17,4 @@ else:
                 break
         if is_prime:
             print(num, end=' ')
+
