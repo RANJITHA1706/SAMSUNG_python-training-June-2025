@@ -1,7 +1,5 @@
 print("Welcome to GlobalNext Tax Calculator")
-print()
-
-# ===== INPUT SECTION =====
+prin()
 
 # Name Input
 while True:
@@ -62,7 +60,6 @@ while True:
         pass
     print("Invalid input. Bonus % must be between 0 and 100.")
 
-# ===== CALCULATIONS =====
 
 gross_monthly = basic_salary + special_allowance
 
@@ -82,7 +79,7 @@ taxable_income = annual_gross - standard_deduction
 if taxable_income < 0:
     taxable_income = 0
 
-# ===== TAX CALCULATION =====
+#  TAX CALCULATION 
 
 slabs = [300000, 300000, 300000, 300000, 300000]
 rates = [0.0, 0.05, 0.10, 0.15, 0.20, 0.30]
@@ -112,11 +109,6 @@ if taxable_income <= 700000:
 cess = tax * 0.04
 total_tax = tax + cess
 net_salary = annual_gross - total_tax
-
-# ===== RUPEE FORMATTER (NO DEF) =====
-
-# We'll use this code inline for each formatted output
-# amount → string with ₹, comma and 2 decimal digits
 def format_inline(amount):
     value = int(amount * 100 + 0.5)
     rupees = value // 100
@@ -140,8 +132,6 @@ def format_inline(amount):
         paisa_str = str(paise)
 
     return "₹" + s + "." + paisa_str
-
-# ===== OUTPUT REPORT =====
 
 print()
 print("=" * 40)
