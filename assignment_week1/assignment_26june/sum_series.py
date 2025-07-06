@@ -10,4 +10,4 @@ for i in range(m):
     sign        = -1 * sign
     term        = numerator / dinominator * sign
     sum_of_series += term
-print(f"The sum of the series with {m}terms in series is",sum_of_series)
+print(f"The sum of the series with {m} terms in series is",sum_of_series)

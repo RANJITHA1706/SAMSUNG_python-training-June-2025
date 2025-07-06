@@ -25,6 +25,7 @@ for i in range(number_of_lines):
             print("*", end=" ")
         else:
             print(" ", end=" ")
+    print()
 print("4.Hollow rhombus")
 for i in range(number_of_lines):
     print(" " * (number_of_lines-i-1), end="")
